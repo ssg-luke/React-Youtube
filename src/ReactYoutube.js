@@ -9,8 +9,8 @@ class ReactYoutube extends Component {
     _handleInit(props){
         let allObjects = {};
         let handleVideoObject = this._handleVideoV2(props);
-        allObjects = {...allObjects, 
-            ...handleVideoObject, 
+        allObjects = {...allObjects,
+            ...handleVideoObject,
             ...this._handleThumbnailV2(props, handleVideoObject.videoID),
             ...this._handleOtherV2(props)};
         return allObjects;
@@ -220,9 +220,10 @@ class ReactYoutube extends Component {
                 maxHeight: "50px",
                 width: "100%",
                 transform: "translateY(-50%)",
-                top: "50%"
+                top: "50%",
+                left: 0
             }
-            
+
             return (
                 <div className={`ReactYoutube-PlayAwait${this.state.fadePostFix}`} style={stylePlayAwait} onMouseUp={() => this.setState({playPress: true})}>
                     <img src={this.state.thumbnail} alt="Youtube Thumbnail" style={styleBG}/>
