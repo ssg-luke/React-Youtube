@@ -218,10 +218,9 @@ class ReactYoutube extends Component {
                 position: "absolute",
                 height: "20%",
                 maxHeight: "50px",
-                width: "100%",
+                width: "68px",
                 transform: "translateY(-50%)",
-                top: "50%",
-                left: 0
+                top: "50%"
             }
 
             return (
